@@ -6,7 +6,8 @@ class subinfo(info.infoclass):
         self.options.dynamic.registerOption("osxArchs", "arm64")
 
     def setTargets(self):
-        self.svnTargets["master"] = "[git]https://github.com/nextcloud/desktop"
+        self.svnTargets["master"] = "[git]https://github.com/nextcloud/desktop/tree/v3.13.4"
+        #self.svnTargets["master"] = "[git]https://github.com/nextcloud/desktop" https://github.com/nextcloud/desktop/tree/v3.13.4
 
         self.description = "Nextcloud Desktop Client"
         self.displayName = "Nextcloud"
